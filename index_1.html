@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QMS - Store Management System (QMIS)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              qms: {
+                DEFAULT: "#7B3F00", // main logo brown
+                light: "#A0522D",
+                dark: "#4B2E0F",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-qms text-white shadow fixed w-full z-50 top-0">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-2">
+          <img src="icon.png" alt="QMS Logo" class="h-8 w-8" />
+          <span class="font-bold text-lg">QMS</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-qms-light">Home</a>
+          <a href="#about" class="hover:text-qms-light">About</a>
+          <a href="#product" class="hover:text-qms-light">Product</a>
+          <a href="#pricing" class="hover:text-qms-light">Pricing</a>
+          <a href="#register" class="hover:text-qms-light">Register</a>
+          <a href="#downloads" class="hover:text-qms-light">Downloads</a>
+          <a href="#contact" class="hover:text-qms-light">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="bg-qms-light text-white text-center py-32 mt-16">
+      <h1 class="text-4xl font-bold mb-4">QMIS - Store Management System</h1>
+      <p class="text-lg mb-6 max-w-2xl mx-auto">
+        Manage your store sales, stock, and finance seamlessly across all
+        platforms – desktop, mobile, and web.
+      </p>
+      <a
+        href="#register"
+        class="bg-white text-qms font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100"
+        >Get Started</a
+      >
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold text-qms mb-6">About QMS</h2>
+      <p class="text-gray-700 leading-relaxed max-w-3xl">
+        QMS (Qamsa Management Systems) is dedicated to helping businesses run
+        smarter with QMIS – a powerful, multi-platform Store Management System
+        designed for small and medium enterprises. Our mission is to simplify
+        inventory, sales, and finance management so you can focus on growing
+        your business.
+      </p>
+    </section>
+
+    <!-- Product -->
+    <section id="product" class="bg-white py-20 px-6">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-qms mb-12 text-center">
+          Product Features
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-qms mb-2">
+              Stock & Inventory
+            </h3>
+            <p>Track products, stock levels, and suppliers with ease.</p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-qms mb-2">
+              Sales & Invoicing
+            </h3>
+            <p>Generate invoices, track sales, and manage customer accounts.</p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-qms mb-2">
+              Finance & Reports
+            </h3>
+            <p>
+              Get insights with detailed reports and analytics for better
+              decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="bg-gray-50 py-20 px-6">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-qms mb-12 text-center">
+          Pricing Plans
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="border rounded-lg shadow p-6 text-center bg-white">
+            <h3 class="text-xl font-semibold text-qms">Starter</h3>
+            <p class="text-3xl font-bold my-4">$19/mo</p>
+            <ul class="text-gray-600 mb-6 space-y-1">
+              <li>1 Store</li>
+              <li>Basic Reports</li>
+              <li>Email Support</li>
+            </ul>
+            <a
+              href="#register"
+              class="bg-qms text-white px-4 py-2 rounded-lg hover:bg-qms-dark"
+              >Choose</a
+            >
+          </div>
+          <div
+            class="border-2 border-qms rounded-lg shadow-lg p-6 text-center bg-white"
+          >
+            <h3 class="text-xl font-semibold text-qms">Standard</h3>
+            <p class="text-3xl font-bold my-4">$49/mo</p>
+            <ul class="text-gray-600 mb-6 space-y-1">
+              <li>Up to 5 Stores</li>
+              <li>Advanced Reports</li>
+              <li>Priority Support</li>
+            </ul>
+            <a
+              href="#register"
+              class="bg-qms text-white px-4 py-2 rounded-lg hover:bg-qms-dark"
+              >Choose</a
+            >
+          </div>
+          <div class="border rounded-lg shadow p-6 text-center bg-white">
+            <h3 class="text-xl font-semibold text-qms">Enterprise</h3>
+            <p class="text-3xl font-bold my-4">Custom</p>
+            <ul class="text-gray-600 mb-6 space-y-1">
+              <li>Unlimited Stores</li>
+              <li>Custom Reports</li>
+              <li>Dedicated Support</li>
+            </ul>
+            <a
+              href="#contact"
+              class="bg-qms text-white px-4 py-2 rounded-lg hover:bg-qms-dark"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" class="container mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold text-qms mb-8 text-center">Register</h2>
+      <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
+        <input
+          type="text"
+          placeholder="Business Name"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+          required
+        />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+        />
+        <select
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+        >
+          <option>Retail</option>
+          <option>Wholesale</option>
+          <option>Pharmacy</option>
+          <option>Other</option>
+        </select>
+        <button
+          type="submit"
+          class="w-full bg-qms text-white px-4 py-3 rounded-lg hover:bg-qms-dark"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="bg-gray-100 py-20 px-6">
+      <h2 class="text-3xl font-bold text-qms mb-8 text-center">Downloads</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a
+          href="#"
+          class="bg-white border shadow px-6 py-4 rounded-lg hover:bg-gray-50"
+          >Windows</a
+        >
+        <a
+          href="#"
+          class="bg-white border shadow px-6 py-4 rounded-lg hover:bg-gray-50"
+          >macOS</a
+        >
+        <a
+          href="#"
+          class="bg-white border shadow px-6 py-4 rounded-lg hover:bg-gray-50"
+          >Linux</a
+        >
+        <a
+          href="#"
+          class="bg-white border shadow px-6 py-4 rounded-lg hover:bg-gray-50"
+          >Android</a
+        >
+        <a
+          href="#"
+          class="bg-white border shadow px-6 py-4 rounded-lg hover:bg-gray-50"
+          >iOS</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold text-qms mb-8 text-center">Contact Us</h2>
+      <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+          required
+        />
+        <textarea
+          placeholder="Your Message"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-qms"
+          rows="5"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full bg-qms text-white px-4 py-3 rounded-lg hover:bg-qms-dark"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-qms-dark text-white py-6 text-center">
+      <p>&copy; 2025 QMS - Qamsa Management Systems. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
